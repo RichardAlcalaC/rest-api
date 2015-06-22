@@ -9,8 +9,8 @@ var calculatorAll = function(){
     console.log('NUMBERS:' , arguments);
     console.log('SUM: ' , sum(arguments));
     console.log('AVG: ' , average(arguments));
-    console.log('MAX: ' , max(arguments));
-    console.log('MIN: ' , min(arguments));
+    console.log('MAX: ' , maxNumber(arguments));
+    console.log('MIN: ' , minNumber(arguments));
 };
 
 /**
@@ -40,7 +40,7 @@ var average = function(numbers){
  * calculate the max number
  * @param numbers
  */
-var max = function(numbers){
+var maxNumber = function(numbers){
     return Math.max.apply(null, numbers);
 };
 
@@ -48,6 +48,6 @@ var max = function(numbers){
  * calculate the min number
  * @param numbers
  */
-var min = function(numbers){
+var minNumber = function(numbers){
     return Math.min.apply(null, numbers);
 };

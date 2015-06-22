@@ -16,18 +16,17 @@ function numberWords(phara){
  */
 function numberCalculator()
 {
-    //var array = arguments.split(',');
-    var sum = SumTotal(arguments);
-    console.log("The summatory is: " + SumTotal(arguments));
-    console.log("The average is: " + (SumTotal(arguments)/arguments.length));
+    var sum = sumTotal(arguments);
+    console.log("The summatory is: " + sum);
+    console.log("The average is: " + sum/arguments.length);
     console.log("The number of numbers is: " + arguments.length);
 }
 
-function SumTotal(argumentsData)
+function sumTotal(argumentsData)
 {
     var sum=0;
-    for ( i = 0; i < argumentsData.length-1; i++ ) {
-        sum += a[ i ];
+    for (i=0; i<argumentsData.length; i++ ) {
+        sum += argumentsData[i];
     }
     return sum;
 }
